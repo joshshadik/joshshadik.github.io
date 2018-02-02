@@ -4,9 +4,16 @@ layout: default
 
 ## Featured
 
+<a href="{{site.jellyface_url}}" target="_blank">
+Jelly Face
+<img src="./assets/jelly-face.gif" alt="Jelly Face" width="100%"  border="10" />
+</a>
+
+<br />
+
 <a href="{{site.voxsculpt_url}}" target="_blank">
 VoxSculpt
-<img src="https://lh3.googleusercontent.com/hispWLtZcJiTbwsv-cyX8qebQ2YSjJHc8njaILO4rPn3464XFggmBW9DK9mX6RmcVqDGasUEVNXR-k3WHbjY2UgAXV4Tsw=s1024" alt="MECHA TRIGGER" width="100%"  border="10" />
+<img src="https://lh3.googleusercontent.com/hispWLtZcJiTbwsv-cyX8qebQ2YSjJHc8njaILO4rPn3464XFggmBW9DK9mX6RmcVqDGasUEVNXR-k3WHbjY2UgAXV4Tsw=s1024" alt="Voxsculpt" width="100%"  border="10" />
 </a>
 
 <br />

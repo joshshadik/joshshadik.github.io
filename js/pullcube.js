@@ -87,7 +87,7 @@ class PullCube {
             var ext = gl.getExtension("EXT_color_buffer_float");
             if( ext == null )
             {
-                alert("Device & browser needs to support floating point or half floating point textures in order to work properly");
+                return false;
             }
             else
             {
@@ -106,7 +106,7 @@ class PullCube {
                 }
                 else
                 {
-                    alert("Device & browser needs to support floating point or half floating point textures in order to work properly");
+                    return false;
                 }
             }
         }
@@ -187,6 +187,8 @@ class PullCube {
         
         gl.bindFramebuffer( gl.FRAMEBUFFER, null ); 
         gl.viewport(0, 0, canvas.width, canvas.height);
+
+        return true;
     }
 
     //
@@ -346,8 +348,14 @@ class PullCube {
     init()
     {
         this.initBuffers();  
-        this.initParticleData();      
+        if(!this.initParticleData())
+        {
+            return false;
+        }      
+        
         this.initMaterials();
+
+        return true;
     }
 
     update()

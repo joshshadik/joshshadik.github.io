@@ -46,32 +46,28 @@ function start() {
         _pullCube = new PullCube();
         _time = new Time();
 
-        _pullCube.init();
-
-        
-        canvas.onmousedown = handleMouseDown;
-        canvas.oncontextmenu = handleRightClick;
-        document.onmouseup = handleMouseUp;
-        document.onmousemove = handleMouseMove;
-        document.onmousewheel = handleMouseWheel;
-        //document.ontouchstart = handleTouchStart;
-        //document.ontouchmove = handleTouchMove;
-        document.body.addEventListener('touchmove', function(event) {
-            event.preventDefault();
-            handleTouchMove(event);
-        }, false); 
-
-        document.body.addEventListener('touchstart', function(event) {
-            event.preventDefault();
-            handleTouchStart(event);
-        }, false); 
-        
-        // start the core loop cycle
-        requestAnimationFrame(tick);     
-    }
-    else
-    {
-        alert("sorry, your browser/device does not support the webgl compabilities this application needs.")
+        if(_pullCube.init()){
+            canvas.onmousedown = handleMouseDown;
+            canvas.oncontextmenu = handleRightClick;
+            document.onmouseup = handleMouseUp;
+            document.onmousemove = handleMouseMove;
+            document.onmousewheel = handleMouseWheel;
+            //document.ontouchstart = handleTouchStart;
+            //document.ontouchmove = handleTouchMove;
+            document.body.addEventListener('touchmove', function(event) {
+                event.preventDefault();
+                handleTouchMove(event);
+            }, false); 
+    
+            document.body.addEventListener('touchstart', function(event) {
+                event.preventDefault();
+                handleTouchStart(event);
+            }, false); 
+            
+            // start the core loop cycle
+            requestAnimationFrame(tick);    
+        }   
+ 
     }
 }
 
@@ -148,11 +144,6 @@ function initWebGL() {
         gl.getExtension('WEBGL_depth_texture');
     }
 
-    // If we don't have a GL context, give up now
-
-    if (!gl) {
-        alert("Unable to initialize WebGL. Your browser may not support it.");
-    }
 }
 
 
