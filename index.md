@@ -6,7 +6,7 @@ layout: default
 
 <a href="{{site.jellyface_url}}" target="_blank">
 Jelly Face
-<img src="./assets/jelly-face.gif" alt="Jelly Face" width="100%"  border="10" />
+<img src="./assets/snoop.gif" alt="Jelly Face" width="100%"  border="10" />
 </a>
 
 <br />
