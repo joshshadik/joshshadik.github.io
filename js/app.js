@@ -66,8 +66,15 @@ function start() {
             
             // start the core loop cycle
             requestAnimationFrame(tick);    
-        }   
+        }
+        else{
+            canvas.parentNode.removeChild(canvas);
+        }
  
+    }
+    else
+    {
+        canvas.parentNode.removeChild(canvas);
     }
 }
 
