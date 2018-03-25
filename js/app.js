@@ -26,8 +26,11 @@ function start() {
 
     canvas = document.getElementById("glcanvas");
 
-    canvas.width  = window.innerWidth;
-    canvas.height = window.innerHeight;
+    var displayWidth  = Math.floor(window.innerWidth * window.devicePixelRatio);
+    var displayHeight = Math.floor(window.innerHeight * window.devicePixelRatio);
+
+    canvas.width  = displayWidth;
+    canvas.height = displayHeight;
     
     initWebGL(canvas);
 
@@ -214,8 +217,8 @@ function saveVoxelTexture() {
 function resize() 
 {
 
-  var displayWidth  = window.innerWidth;
-  var displayHeight = window.innerHeight;
+    var displayWidth  = Math.floor(window.innerWidth * window.devicePixelRatio);
+    var displayHeight = Math.floor(window.innerHeight * window.devicePixelRatio);
 
   // Check if the canvas is not the same size.
   if (canvas.width  != displayWidth ||
