@@ -1,0 +1,72 @@
+#-------------------------------
+# General Site Settings
+
+menu:
+- {name: 'Projects', url: 'pages/projects.html'}
+- {name: 'About', url: 'pages/about.html'}
+
+#-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+seo:
+  description: 'Personal portfolio of Josh Shadik'
+  rel-author: 'https://plus.google.com/u/0/#'
+  rel-publisher: 'https://plus.google.com/u/0/#'
+
+#-------------------------------
+# Google Analytics Section
+
+# Analytics helps you understand who visits your website.
+# Learn more at: http://support.google.com/analytics/answer/1008065
+
+# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+
+google-analytics-ua: 'UA-112060364-3'
+
+#-------------------------------
+# Disqus Section
+
+# Change to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: 'thathungrymind'
+
+#-------------------------------
+# About Section
+
+about: >
+  # About
+
+  This is my personal website/portfolio, mostly just to share links to projects I've worked on.
+  I like working in areas of computer graphics, games, and mixed reality.
+
+contact: >
+  # Contact
+
+  You may contact me [through my email](mailto:l.nguyen.paul@gmail.com) or [tweet at me](https://twitter.com/intent/tweet?text=%40paululele) if you have any questions or would like to bring up any issues.
+
+#-------------------------------
+# Work Section
+
+projects:
+- {name: 'Jelly Face', folder: 'jelly-face', file: 'projects/jelly-face.html', type: 'featured'}
+- {name: 'VoxSculpt', folder: 'voxsculpt', file: 'projects/voxsculpt.html', type: 'featured'}
+- {name: 'Mecha Trigger', folder: 'mecha-trigger', file: 'projects/mecha-trigger.html', type: 'featured'}
+- {name: 'Leap Pong', folder: 'leap-pong', file: 'projects/leap-pong.html'}
+- {name: 'Cubenado', folder: 'cubenado', file: 'projects/cubenado.html'}
+- {name: 'Dawn of Day X', folder: 'dawn-of-day-x', file: "projects/dawn-of-day-x.html"}
+- {name: '! for NES', folder: 'ggj-2015', file: 'projects/ggj-2015.html'}
+- {name: 'Cylon Model', folder: 'cylon', file: 'projects/cylon.html'}
+
+#-------------------------------
+# Contact Section
+
+social:
+- {icon: 'github', link: 'https://github.com/joshshadik'}
+- {icon: 'twitter', link: 'https://twitter.com/joshshadik'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/josh-shadik'}
+- {icon: 'envelope', link: 'mailto:joshshadik@gmail.com'}
+
+# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'

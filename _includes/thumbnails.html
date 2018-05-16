@@ -1,0 +1,23 @@
+<section>
+  <div class="thumb-container">
+    {% for project in site.data.settings.projects %}
+      {% if project.type == "featured" %}
+        <a href="{{ site.github.url }}/{{ project.file }}">
+          <div class="thumb-unit" data-folder="{{ site.github.url }}/projects/{{ project.folder }}" style="background-image: url({{ site.github.url }}/assets/img/projects/{{ project.folder }}/thumb.jpg)">
+            <div class="thumb-overlay">
+              <strong>{{ project.name }} <i class="fa fa-arrow-right" aria-hidden="true"></i></strong>
+            </div>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+
+    <a href="{{ site.github.url }}/pages/projects.html">
+      <div class="thumb-unit" style="background-image: url({{ site.github.url }}/assets/img/projects/cubenado/thumb.jpg)">
+        <div class="thumb-overlay">
+          <strong>More... <i class="fa fa-arrow-right" aria-hidden="true"></i></strong>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
